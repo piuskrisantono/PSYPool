@@ -1,0 +1,468 @@
+
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;
+	background-image: url('img/background.jpg');
+}
+
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+#header{
+	height: 300px;
+	background-repeat: no-repeat;
+	background-image: url('img/header.jpg');
+	background-position: center;
+
+}
+
+#navbar{
+	height: 50px;
+	background-color: #a67c52;
+	padding-left: 7px;
+	font-size: 20px;
+}
+
+#navbar-logo{
+	display: inline-block;
+	padding: 5px;
+	line-height: 55px;
+}
+
+#logo{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+
+#navbar-logo-name{
+	display: inline-block;
+	position: absolute;
+	line-height: 50px;
+	color: white;
+}
+
+#navbar-menu{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	height: 50px;
+	line-height: 50px;
+}
+
+#dropdown{
+	position: absolute;
+	right: 174px;
+	background-color: white;
+	width: 167px;
+	display: none;
+	z-index: 1;
+}
+
+#dropdown:hover {
+	display: block;
+}
+
+#menu-item{
+	font-size: 20px;
+	color:  #a67c52;
+	text-align: center;
+	transition: 0.3s;
+}
+
+#navbar-content, #navbar-content-dropdown{
+	display: inline-block;
+	padding: 0px 5px 0px 5px;
+	color: white;
+	transition: 0.3s;
+	float:left;
+}
+
+
+#navbar-content:hover{
+	 box-shadow:inset 0px -8px 0px 0px white;
+     box-sizing: border-box; 
+}
+
+#menu-item:hover{
+	 box-shadow:inset 0px -8px 0px 0px #a67c52;
+     box-sizing: border-box; 
+}
+
+
+.triangle-down{
+	width: 0;
+	height: 0;
+	border-left:5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 7px solid  #a67c52;
+	display: inline-block;
+}
+
+.triangle-down-white{
+	width: 0;
+	height: 0;
+	border-left:5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 7px solid white;
+	display: inline-block;
+	line-height: 50px;
+	margin-left: 5px;
+}
+
+/*#navbar-content-dropdown:hover #dropdown{
+	display: block;
+}*/
+
+
+#navbar-menu-dropdown{
+	display: none;
+	position: absolute;
+	right: 0;
+	height: 30px;
+	width: 30px;
+	background-color: white;
+	margin: 10px;
+}
+
+
+.menu-strip{
+	width: 80%;
+	height: 2px;
+	margin: 3px;
+	background-color: #a67c52;
+}
+
+#navbar-menu-dropdown-item{
+	display: none;
+	background-color: white;
+}
+
+
+#dropdown-menu-item-content, #dropdown-menu-item-content-dropdown{
+	text-align: center;
+	color:  #a67c52;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	padding:5px;
+}
+
+#dropdown-submenu{
+	display: none;
+	background-color:  #a67c52;
+	color: white;
+	text-align: center;
+
+}
+
+#dropdown-submenu-item{
+	height: 25px;
+	line-height: 25px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: white;
+}
+
+#footer{
+	height: 180px;
+	padding: 10px;
+	background-color: #362f2d;
+	color: white;
+	padding-top: 40px;
+}
+
+#social-media{
+	display: inline-block;
+}
+
+#social-media-logo{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+
+#social-media-account{
+	margin-top: 5px;
+}
+
+#social-media-logo-name{
+	display: inline-block;
+	position: absolute;
+	line-height: 30px;
+	margin-left: 5px;
+}
+
+
+#info{
+	display: inline-block;
+	margin-right: 10px;
+	width: 300px;
+	position: absolute;
+	right: 0;
+	text-align: right;
+}
+
+#info-detail{
+	text-align: right;
+}
+
+#info-logo{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+
+#info-name{
+	display: inline-block;
+	width: 200px;
+	line-height: 30px;
+	margin-left: 5px;
+	text-align: right;
+}
+
+
+#title{
+	font-size: 30px;
+}
+
+#kotak{
+	width: 900px;
+	height: 500px;
+	display: inline-block; 	
+}
+
+
+#left-side{
+	display: inline-block;
+	line-height: 500px;
+	float: left;
+	margin-right: 10px;
+}
+
+
+#right-side{
+	display: inline-block;
+	line-height: 500px;
+	float: left;
+	margin-left: 10px;
+}
+
+#left-btn
+{
+	display: inline-block;
+	
+
+}
+
+#right-btn
+{
+	display: inline-block;
+	
+
+}
+
+#kotak-kiri{
+	width: 400px;
+	height: 500px;  
+/*	background-image: url("img/tournamentpast.jpg");*/
+	background-repeat: no-repeat;
+	background-size: auto 500px;
+	background-position: center;
+	display: inline-block;
+	float: left;
+}
+
+#kotak-kanan
+{
+	width: 280px;
+	float:left;
+	height: 480px;
+	display: inline-block;
+	text-align: left;
+	padding: 10px;
+	background-color: white;
+}
+
+#slider
+{
+	width: 400px;
+	height: 500px;
+
+
+}
+
+#img-1, #img-2, #img-3, #img-4, #img-5
+{
+	width: 400px;
+	height: 500px; 
+	position: relative;
+}
+
+#ket-1, #ket-2, #ket-3, #ket-4, #ket-5{
+	position: relative;
+	background-color: white;
+}
+
+@media only screen and (max-width:500px) {
+	#navbar-menu{
+		display: none;
+	}
+
+	#navbar-menu-dropdown{
+		display: inline-block;
+	}
+
+
+	#footer{
+		height: auto;
+	}
+
+	#title{
+		margin: auto;
+		width: 50%;
+		display: block;
+	}
+
+	#social-media{
+		margin: auto;
+	    display: block;
+	}
+
+	#social-media-account{
+		width: 50%;
+		margin:5px auto auto auto;
+	}
+
+	#social-media-logo{
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+
+	}
+
+	#social-media-logo-name{
+		display: inline-block;
+		position: absolute;
+		line-height: 30px;
+		margin-left: 5px;
+	}
+
+
+	#info{
+		display: block;
+		position: static;
+		margin: 40px auto auto auto;
+		width: 100%;
+	}
+
+	#info-detail{
+		width: 50%;
+		margin: auto auto 10px auto;
+	}
+
+	#info-logo{
+		width: 30px;
+		height: 30px;
+		display: inline-block;		
+	}
+
+	#info-name{
+		display: inline-block;
+		margin-left: 5px;
+		width: 70%;
+	}
+
+	#img-1,#img-2,#img-3,#img-4,#img-5
+	{
+		height: 100%;
+		width: 100%;
+		display: inline-block;
+	}
+
+	#kotak-kiri
+	{
+		width: 200px;
+		display: inline-block;
+		height: 300px;
+	}
+
+	#kotak-kanan 
+	{
+		width: 50px;
+		display: inline-block;
+		height: 300px;
+		padding: 5px;
+	}
+
+	#kotak{
+		width: 400px;
+		height: 300px;
+		display: inline-block; 	
+	}
+
+
+	#left-side{
+		display: inline-block;
+		line-height: 300px;
+		float: left;
+		margin-right: 10px;
+	}
+
+
+	#right-side{
+		display: inline-block;
+		line-height: 300px;
+		float: left;
+		margin-left: 10px;
+	}
+
+	#left-btn
+	{
+		display: inline-block;
+	}
+
+	#right-btn
+	{
+		display: inline-block;
+	}
+
+	#ket-1, #ket-2, #ket-3, #ket-4, #ket-5{
+		font-size: 8px;
+	}
+	#content{
+		height: 400px;
+	}
+}
+
+
+
+@media only screen and (min-width:499px) {
+	#navbar-menu-dropdown-item{
+		display: none;
+	}
+
+
+	#dropdown-menu-item-content{
+		display: none;
+	}
+
+	#dropdown-menu-item-content-dropdown{
+		display: none;
+	}
+
+	#dropdown-submenu{
+		display: none;
+	}
+
+	#dropdown-submenu-item{
+		display: none;
+	}
+
+}

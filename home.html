@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<script src = "jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<div id="header"></div>
+
+
+<div id="navbar">
+	<div id="navbar-logo">
+		<img id="logo" src="img/logo.png">	
+	</div>
+		<div id="navbar-logo-name">
+			<b>PSYPool</b>
+		</div>
+
+	<div id="navbar-menu">
+		<a href="home.html"><div id="navbar-content"><b>HOME</b></div></a>
+		<div id="navbar-content-dropdown"><b>TOURNAMENT</b><div class="triangle-down-white"></div>
+			<div id="dropdown">
+				<a href="gallery.html">
+					<div id="menu-item">
+						<b>GALLERY</b>
+					</div>
+				</a>
+				<a href="tournament.html">
+					<div id="menu-item">
+						<b>INFORMATION</b>
+					</div>
+				</a>
+			</div>
+		</div>
+		<a href="project.html"><div id="navbar-content"><b>PRODUCTS</b></div></a>
+		<a href="buy.html"><div id="navbar-content"><b>BUY</b></div></a>
+	</div>
+
+	<div id="navbar-menu-dropdown">
+		<hr class="menu-strip">
+		<hr class="menu-strip">	
+		<hr class="menu-strip">	
+		
+	</div>
+</div>
+
+<div id="navbar-menu-dropdown-item">
+	<a href="home.html">
+		<div id="dropdown-menu-item-content">
+			<b>HOME</b>
+		</div>
+	</a>
+		<div id="dropdown-menu-item-content-dropdown">
+			<b>TOURNAMENT</b>
+			<div class="triangle-down"></div>
+		</div>
+		<div id="dropdown-submenu">
+			<a href="gallery.html"><div id="dropdown-submenu-item"><b>GALLERY</b></div></a>
+			<a href="tournament.html"><div id="dropdown-submenu-item"><b>INFORMATION</b></div></a>
+			
+		</div>
+	<a href="project.html">	
+		<div id="dropdown-menu-item-content">
+			<b>PRODUCTS</b>
+		</div>
+	</a>
+	<a href="buy.html">
+		<div id="dropdown-menu-item-content">
+			<b>BUY</b>
+		</div>
+	</a>
+</div>
+
+<div id="content">
+	<center>
+		<div id="title-our-products">
+			<b>OUR PRODUCTS</b>
+		</div>
+		<hr id="line-our-products">
+		<br>
+		<div id="slider-all">
+				<div id="left-button">
+						<div id="left-arrow">
+					
+						</div>
+				</div>
+				<div id="inti">
+							<div id="slider">
+						<img src="img/products/product-2.jpg" id="img-1">
+						<img src="img/products/product-1.jpeg" id="img-2">
+						<img src="img/products/product-3.jpg" id="img-3">
+					</div>
+				</div>
+				<div id="right-button">
+						<div id="right-arrow">
+					
+						</div>
+				</div>
+				<p id="slider-description">
+					<b>Best quality kit to play and beat your oponent in PSYPool.
+					Designed to maximize your ability and comfortability in use.
+					Easily get it now!</b>
+				</p>
+		</div>
+
+	</center>
+
+		<div id="about-us">
+			<img id="place-picture" src="img/place.jpg">
+			<div id="about-us-description">
+				<div id="title">
+					<b>ABOUT US</b>
+				</div>
+				PsyPool Store is a famous shop 
+				for selling billiard accessories.
+				There are several stores located 
+				in different cities in Indonesia. 
+				PSYPoll Store has been selling 
+				pool accessories since 
+				January 20, 1998.
+			</div>
+		</div>
+</div>
+
+<div id="footer">
+	<div id="social-media">
+		<b id="title">FOLLOW US</b>
+		<a href="https://www.instagram.com">
+			<div id="social-media-account">
+				<img id="social-media-logo" src="img/ig.png">
+				<div id="social-media-logo-name">
+					<b>PSYPool</b>
+				</div>
+			</div>
+		</a>
+		<a href="https://facebook.com">
+			<div id="social-media-account">
+				<img id="social-media-logo" src="img/fb.png">
+				<div id="social-media-logo-name">
+					<b>PSYPool Billiard</b>
+				</div>
+			</div>
+		</a>
+		<a href="https://youtube.com">
+			<div id="social-media-account">
+				<img id="social-media-logo" src="img/youtube.png">
+				<div id="social-media-logo-name">
+					<b>PSYPool Video</b>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div id="info">
+		<b id="title">CONTACT US</b>
+		<div id="info-detail">
+			<div id="info-name">
+				<b>0888 8888 8888</b>
+			</div>
+			<img id="info-logo" src="img/phone.png">
+		</div>
+		<div id="info-detail">
+			<div id="info-name">
+				<b>Jl. Rasuna Said Blok L 13 no. 16, Jakarta</b>
+			</div>
+			<img id="info-logo" src="img/address.png">
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+
+<script>
+	$('div#navbar-menu-dropdown').click(function(){
+		$('div#navbar-menu-dropdown-item').slideToggle();
+	});
+
+	$('div#dropdown-menu-item-content-dropdown').click(function(){
+		$('div#dropdown-submenu').slideToggle();
+	});
+
+	$('div#navbar-content-dropdown').hover(function(){
+		$('div#dropdown').slideToggle();
+	});
+
+	var index=1;
+	$('document').ready(function()
+	{
+		for(var i=0;i<3;i++)
+		{
+			if(i+1 == index)
+			{
+				continue;
+			}
+			$('#img-'+(i+1)).hide();
+		}
+	});
+
+	$('#right-arrow').click(function()
+	{
+		$('#img-'+index).animate(
+		{
+			'opacity':'0',
+		     'left':'200px'
+		},"slow");
+
+		setTimeout(function()
+		{
+			$('#img-'+index).hide();	
+			if(index==3){
+				index=0;
+			}
+			index++;
+			$('#img-'+index).css('left','-200px');
+			$('#img-'+index).css('opacity','0');
+			$('#img-'+index).show();
+			$('#img-'+index).animate({
+				'opacity':'1',
+				'left' :'0px'
+			},"slow");
+
+		},500);
+	});
+
+	$('#left-arrow').click(function()
+	{
+		$('#img-'+index).animate(
+		{
+			'opacity':'0',
+		     'left':'-200px'
+
+		},"slow");
+
+		setTimeout(function(){
+			$('#img-'+index).hide();	
+			if(index==1){
+				index=4;
+			}
+			index--;
+
+			$('#img-'+index).css('left','200px');
+			$('#img-'+index).css('opacity','0');
+			$('#img-'+index).show();
+			$('#img-'+index).animate({
+				'opacity':'1',
+				'left' :'0px'
+			},"slow");
+		},500);
+	});
+
+
+
+
+</script>
+
+</html>
